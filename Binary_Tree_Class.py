@@ -6,6 +6,7 @@ class BinarySearchTreeNode():
         self.left = None
         self.right = None
 
+
     # This is a method for adding or reading a data 
     def add_child(self, data):
         if data == self.data:
@@ -24,6 +25,7 @@ class BinarySearchTreeNode():
             else:
                 self.right = BinarySearchTreeNode(data)
     
+
     # This method is checking if the value that has been passed on the function is in the binary tree
     def search(self, val):
         # If the first data matches the one you are finding, it will simply return true
@@ -34,16 +36,15 @@ class BinarySearchTreeNode():
         # to find the whether the value is in the data
         if val < self.data:
             if self.left:
-                self.left.search(val)
+                return self.left.search(val)
             else:
                 return False
        
-        if val < self.data:
+        if val > self.data:
             if self.right:
-                self.right.search(val)
+                return self.right.search(val)
             else:
                 return False
-
 
 
     # This method is created to sort data according to its order
