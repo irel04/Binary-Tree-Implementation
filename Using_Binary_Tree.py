@@ -10,7 +10,9 @@ def build_tree(elements):
     return root
 
 if __name__ == '__main__':
-    numbers = [17, 4, 1, 20, 9, 23, 18, 34]
+    numbers = [23, 56, 45, 200, 123, 20, 6]
     numbers_tree = build_tree(numbers)
     print(numbers_tree.search(200))
     print(numbers_tree.in_order_traversal())
+    print(numbers_tree.find_min())
+    print(numbers_tree.find_max())

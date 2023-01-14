@@ -65,3 +65,16 @@ class BinarySearchTreeNode():
 
         return elements
 
+    # Method for finding the minimum and maximum value among the given elements
+    def find_min(self):
+        if self.left:
+            return self.left.find_min()
+        else:
+            return self.data
+
+    def find_max(self):
+        if self.right:
+            return self.right.find_max()
+        else:
+            return self.data
+    
