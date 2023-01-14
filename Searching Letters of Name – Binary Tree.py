@@ -11,9 +11,9 @@ def build_tree(elements):
 
 if __name__ == '__main__':
     numbers = ['I', 'R', 'E', 'L', 'K', 'I', 'A', 'N', 'C','B', 'A', 'C', 'O', 'L','O','D']
-    numbers_tree = build_tree(numbers)
-    print(numbers_tree.search('R'))
-    print(numbers_tree.in_order_traversal())
-    print(numbers_tree.find_min())
-    print(numbers_tree.find_max())
-    print(numbers_tree.pre_order_traversal())
+    my_name = build_tree(numbers)
+    print(my_name.search('R'))
+    print(my_name.in_order_traversal())
+    print(my_name.find_min())
+    print(my_name.find_max())
+    print(my_name.pre_order_traversal())
