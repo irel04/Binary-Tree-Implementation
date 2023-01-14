@@ -72,9 +72,39 @@ class BinarySearchTreeNode():
         else:
             return self.data
 
+
     def find_max(self):
         if self.right:
             return self.right.find_max()
         else:
             return self.data
     
+
+    # Pre order Traversal 
+    def pre_order_traversal(self):
+        elements = []
+
+        elements.append(self.data)
+        if self.left:
+            elements += self.left.pre_order_traversal()
+
+        if self.right:
+            elements += self.right.pre_order_traversal()
+
+        return elements
+
+    # Post order traversal
+    def post_order_traversal(self):
+        elements = []
+
+        if self.left:
+            elements += self.left.post_order_traversal()
+        else:
+            return elements
+    
+        if self.right:
+            elements += self.right.post_order_traversal()
+
+       
+
+        return elements
