@@ -22,4 +22,4 @@ class BinarySearchTreenode():
             if self.right:
                 self.right.add_child( data)
             else:
-                self.right = BinarySearchTreenode(data)           
+                self.right = BinarySearchTreenode(data)
