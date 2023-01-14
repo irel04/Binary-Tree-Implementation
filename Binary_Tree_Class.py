@@ -99,12 +99,9 @@ class BinarySearchTreeNode():
 
         if self.left:
             elements += self.left.post_order_traversal()
-        else:
-            return elements
-    
+        
         if self.right:
             elements += self.right.post_order_traversal()
-
-       
+        elements.append(self.data)
 
         return elements
