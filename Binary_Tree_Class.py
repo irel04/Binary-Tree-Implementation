@@ -24,6 +24,30 @@ class BinarySearchTreeNode():
             else:
                 self.right = BinarySearchTreeNode(data)
     
+    # This method is checking if the value that has been passed on the function is in the binary tree
+    def search(self, val):
+        # If the first data matches the one you are finding, it will simply return true
+        if self.data == val:
+            return True
+        
+        # However, we need a recurssion to simply rerunning the search method in order 
+        # to find the whether the value is in the data
+        if val < self.data:
+            if self.left:
+                self.left.search(val)
+            else:
+                return False
+       
+        if val < self.data:
+            if self.right:
+                self.right.search(val)
+            else:
+                return False
+
+
+
+    # This method is created to sort data according to its order
+    # The root value is in the middle of right tree and left tree
     def in_order_traversal(self):
         elements = []
 
