@@ -12,9 +12,9 @@ def build_tree(elements):
 if __name__ == '__main__':
     numbers = [17, 4, 1, 20, 9, 23, 18, 34]
     numbers_tree = build_tree(numbers)
-    print(numbers_tree.search(200))
-    print(numbers_tree.in_order_traversal())
-    print(numbers_tree.find_min())
-    print(numbers_tree.find_max())
-    print(numbers_tree.pre_order_traversal())
-    print(numbers_tree.post_order_traversal())
+    print("\nThere is 200 in the list: ", numbers_tree.search(200))
+    print("Minimum value: ", numbers_tree.find_min())
+    print("Maximum value: ", numbers_tree.find_max())
+    print("In order traversal: ", numbers_tree.in_order_traversal())
+    print("Pre-order traversal: ", numbers_tree.pre_order_traversal())
+    print("Post-order traversal: ", numbers_tree.post_order_traversal())

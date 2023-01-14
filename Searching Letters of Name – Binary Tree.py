@@ -12,8 +12,10 @@ def build_tree(elements):
 if __name__ == '__main__':
     numbers = ['I', 'R', 'E', 'L', 'K', 'I', 'A', 'N', 'C','B', 'A', 'C', 'O', 'L','O','D']
     my_name = build_tree(numbers)
-    print(my_name.search('R'))
-    print(my_name.in_order_traversal())
-    print(my_name.find_min())
-    print(my_name.find_max())
-    print(my_name.pre_order_traversal())
+    print("\nMy name is IREL KIAN C. BACOLOD")
+    print("\nThere is R in my name: ", my_name.search('R'))
+    print("Minimum key value: ", my_name.find_min())
+    print("Maximum key value: ", my_name.find_max())
+    print("In order traversal: ", my_name.in_order_traversal())
+    print("Pre-order traversal: ", my_name.pre_order_traversal())
+    print("Post-order traversal: ", my_name.post_order_traversal())
