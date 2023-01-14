@@ -1,4 +1,4 @@
-class BinarySearchTreenode():
+class BinarySearchTreeNode():
     # This part is used to create instance object
     # It basicall automatically creates properties that all object will take
     def __init__(self, data):
@@ -22,7 +22,7 @@ class BinarySearchTreenode():
             if self.right:
                 self.right.add_child( data)
             else:
-                self.right = BinarySearchTreenode(data)
+                self.right = BinarySearchTreeNode(data)
     
     def in_order_traversal(self):
         elements = []
